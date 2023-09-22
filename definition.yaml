@@ -1,0 +1,14 @@
+asyncapi: 2.6.0
+info:
+  title: Text preprocessing of immigration-related text
+  version: '0.1.0'
+defaultContentType: application/json
+channels:
+  text_preprocessing:
+    publish:
+      message:
+        payload:
+          type: object
+          properties:
+            text:
+              type: string
